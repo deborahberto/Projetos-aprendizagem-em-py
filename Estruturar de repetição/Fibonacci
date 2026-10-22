@@ -1,0 +1,13 @@
+##Cálculo do n-ésimo termo da Sequência de Fibonacci, considerando que o primeiro termo é 1.
+
+def fibonacci(n):
+    a, b = 1, 1
+
+    for i in range(2, n):
+        a, b = b, a + b
+
+    return a if n == 1 else b
+
+
+n = int(input())
+print(fibonacci(n))
